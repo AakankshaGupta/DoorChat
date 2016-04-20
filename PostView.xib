@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostView" customModule="DoorChat" customModuleProvider="target">
+            <connections>
+                <outlet property="copy_btn" destination="Kim-Lt-dZc" id="Yln-IB-bZj"/>
+                <outlet property="post_view" destination="BwK-Sl-y8m" id="prw-Zb-S5S"/>
+                <outlet property="report_btn" destination="0pk-M6-JPY" id="wIa-tI-Ch9"/>
+                <outlet property="share_btn" destination="VxX-af-nQJ" id="i4h-rx-anT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BwK-Sl-y8m">
+                    <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pk-M6-JPY">
+                            <rect key="frame" x="0.0" y="120" width="180" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="    Report" image="ic_report">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="report_btn:" destination="-1" eventType="touchUpInside" id="me2-g0-azQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kim-Lt-dZc">
+                            <rect key="frame" x="0.0" y="60" width="180" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="    Copy post text" image="ic_copy">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="copy_btn:" destination="-1" eventType="touchUpInside" id="amK-LP-NbX"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxX-af-nQJ">
+                            <rect key="frame" x="0.0" y="0.0" width="180" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="A6F-15-y6h"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="    Share" image="ic_share">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="share_btn:" destination="-1" eventType="touchUpInside" id="wgs-61-luU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="0pk-M6-JPY" firstAttribute="width" secondItem="VxX-af-nQJ" secondAttribute="width" id="9wF-FT-ZY3"/>
+                        <constraint firstItem="0pk-M6-JPY" firstAttribute="top" secondItem="Kim-Lt-dZc" secondAttribute="bottom" id="Bf4-oJ-0hK"/>
+                        <constraint firstAttribute="bottom" secondItem="0pk-M6-JPY" secondAttribute="bottom" id="D71-Ub-Ae2"/>
+                        <constraint firstAttribute="width" constant="180" id="DPn-7a-5Ay"/>
+                        <constraint firstItem="Kim-Lt-dZc" firstAttribute="width" secondItem="VxX-af-nQJ" secondAttribute="width" id="HNP-2K-fZa"/>
+                        <constraint firstItem="0pk-M6-JPY" firstAttribute="height" secondItem="VxX-af-nQJ" secondAttribute="height" id="IU3-0j-J2G"/>
+                        <constraint firstItem="Kim-Lt-dZc" firstAttribute="centerX" secondItem="VxX-af-nQJ" secondAttribute="centerX" id="Izq-JK-GoY"/>
+                        <constraint firstItem="Kim-Lt-dZc" firstAttribute="top" secondItem="VxX-af-nQJ" secondAttribute="bottom" id="Jrx-Ja-KBB"/>
+                        <constraint firstItem="VxX-af-nQJ" firstAttribute="top" secondItem="BwK-Sl-y8m" secondAttribute="top" id="Kus-Jw-alP"/>
+                        <constraint firstItem="VxX-af-nQJ" firstAttribute="width" secondItem="BwK-Sl-y8m" secondAttribute="width" id="M7b-uT-Qe8"/>
+                        <constraint firstAttribute="height" constant="180" id="Opx-sF-6DA"/>
+                        <constraint firstItem="VxX-af-nQJ" firstAttribute="leading" secondItem="BwK-Sl-y8m" secondAttribute="leading" id="eWA-19-wwH"/>
+                        <constraint firstItem="0pk-M6-JPY" firstAttribute="leading" secondItem="BwK-Sl-y8m" secondAttribute="leading" id="fwi-az-MSv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BwK-Sl-y8m" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Tf0-3U-K5n"/>
+                <constraint firstItem="BwK-Sl-y8m" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dWH-wd-hky"/>
+            </constraints>
+            <point key="canvasLocation" x="281" y="230"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_copy" width="24" height="24"/>
+        <image name="ic_report" width="24" height="24"/>
+        <image name="ic_share" width="24" height="24"/>
+    </resources>
+</document>

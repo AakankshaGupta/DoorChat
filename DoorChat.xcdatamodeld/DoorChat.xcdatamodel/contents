@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="SavedText" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="door_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="door_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="door_title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="door_total_members" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="door_tym" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_picture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SavedText" positionX="-63" positionY="-18" width="128" height="180"/>
+    </elements>
+</model>
